@@ -5,11 +5,15 @@
 > Express | CDN file upload
 
 
+
 ## Main points: file upload (CDN)
 
 - Los formularios con controles de tipo `file` requeren el atributo `enctype="multipart/form-data"` para procesar el envío de archivos.
-- La dependencia `multer` crea en el objeto la propiedad `req.file` donde guarda los detalles de la subida tras actuar como middleware.
+
+- La dependencia `multer` crea en el objeto `request` la propiedad `file` donde guarda los detalles de la subida tras actuar como middleware.
+
 - Las propiedades del objeto `req.file` son:
+
   * fieldname
   * originalname
   * encoding
